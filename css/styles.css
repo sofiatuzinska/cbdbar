@@ -459,7 +459,37 @@ height: 40px;
 
 }
 
+.social-media-cont {
+    margin-right: 80px;
+}
 
+input[type="email"] {
+    width: 264px;
+    
+    height: 40px;
+    background-color: inherit;
+    font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 24px;
+        letter-spacing: 0.04em;
+        color: var(--white);
+        border: 1px solid #FFFFFF;
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+            border-radius: 4px;
+            border-color: var(--white);
+}
+.subsc-label {
+    display: flex;
+       
+        justify-content: center;
+        align-items: center;
+        padding: 8px 24px;
+        gap: 16px;
+}
+input::placeholder {
+
+}
 /* index */
 /* section one */
 .hero-section {
