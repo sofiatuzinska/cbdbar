@@ -981,12 +981,13 @@ fill: var(--iris);
 
 }
 /* ??? */
-.checkbox:checked .privacy-span {
+input[type="checkbox"]:checked  {
 background-color: var(--ocean);
 border: none;
 fill: #F4F4FD;
 }
 .privacy-link {
+
 color: var(--iris);
 
 }
