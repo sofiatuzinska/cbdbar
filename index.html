@@ -445,11 +445,7 @@
           <p class="footer-prg">Subscribe</p>
           <form class="subsc-form">
             <label class="subsc-label">
-              <button type="submit" class="subsc-btn">
-                Subscribe
-                <svg width="24" height="24" class="subsc-icon">
-                  <use href="./images/icons.svg#icon-icon-send"></use>
-                </svg>
+              
               </button>
               <input
                 name="e-mail"
@@ -457,7 +453,11 @@
                 placeholder="E-mail"
                 class="subsc-input"
               />
-              
+              <button type="submit" class="subsc-btn">
+                Subscribe
+                <svg width="24" height="24" class="subsc-icon">
+                  <use href="./images/icons.svg#icon-icon-send"></use>
+                </svg>
             </label>
           </form>
         </div>
@@ -466,6 +466,11 @@
     <!-- modal -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
+        <button type="button" class="modal-btn" data-modal-close>
+          <svg class="icon-button" width="8" height="8">
+            <use href="./images/icons.svg#icon-Vector"></use>
+          </svg>
+        </button>
         <p class="modal-prg">Leave your contacts and we will call you back</p>
         <form>
           <!-- input 1 -->
