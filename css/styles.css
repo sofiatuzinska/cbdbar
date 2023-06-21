@@ -462,10 +462,12 @@ height: 40px;
 .social-media-cont {
     margin-right: 80px;
 }
-
+form {
+    gap 24px;
+}
 .subsc-form {
     display: flex;
-    gap 24px;
+    
 }
 .subsc-input {
     width: 264px;
@@ -923,5 +925,5 @@ fill: var(--iris);
 
 .modal-textarea:focus {
     border-color: var(--iris);
-    
+
 }
