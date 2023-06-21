@@ -899,9 +899,13 @@ fill: #ffffff
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-icon:focus {
-fill: var(--iris);
+.modal-input:hover + .modal-icon {
+    border-color: var(--iris);
+    fill: #4D5AE5;
 }
+/* .modal-icon:focus {
+fill: var(--iris);
+} */
 
 .modal-comment-cont {
     margin-bottom: 16px;
@@ -927,10 +931,9 @@ fill: var(--iris);
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.textarea-comment:focus {
-    border-color: var(--iris);
 
-}
+
+
 
 .textarea-comment {
     width: 100%;
@@ -981,7 +984,7 @@ fill: var(--iris);
 
 }
 /* ??? */
-input[type="checkbox"]:checked  {
+input:checked + label > span {
 background-color: var(--ocean);
 border: none;
 fill: #F4F4FD;
