@@ -124,7 +124,7 @@
     }
 
     .hero-section {
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.1)), url(/images/mobile.jpg);
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.1)), url(images/mobile.jpg);
         max-width: 480px;
         background-repeat: no-repeat;
         background-position: center;
@@ -403,7 +403,7 @@ header {
 
   }
     .hero-section {
-        background-image: url(/images/4.jpg);
+        background-image: url(images/4.jpg);
         max-width: 768px;
         background-repeat: no-repeat;
         background-position: center;
