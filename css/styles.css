@@ -111,7 +111,9 @@ address {
         letter-spacing: 0.02em;
         color: var(--spring-green);
 }
-
+.address {
+    margin: 0 auto;
+}
 .address-list-item:hover {
     color: var(--chinese-yellow);
 }

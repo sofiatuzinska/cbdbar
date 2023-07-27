@@ -162,6 +162,29 @@
         justify-content: center;
     }
 
+    .sticky-discount-cont {
+        position: fixed;
+      right: 30px;
+      bottom: 30px;
+      display: inline-block;
+      width: 120px;
+      height: 120px;
+      margin: 0;
+      padding: 0;
+      border: none;
+      border-radius: 50%;
+        background-color: var(--chinese-yellow);
+        box-shadow: 5px 5px 14px -1px rgba(0,0,0,0.2);
+    }
+    
+    .sticky-discount-text {
+        margin: 0 auto;
+        font-size: 18px;
+        font-weight: 600;
+        text-align: center;
+        color: var(--white);
+        margin-top: 45px;
+    }
     .section-five {
         max-width: 428px;
         margin: 0 auto;
@@ -243,7 +266,7 @@
     margin-bottom: 20px;
 }
         
-        .mobile-address-list {
+        .mobile-address {
             margin: 0 auto;
             text-align: center;
         }
@@ -320,16 +343,17 @@ margin-left: 40px;
     .section-two {
         padding: 120px 0;
         margin: 0 auto;
+        max-width: 768px;
     }
 
     .benefits-list {
         margin-bottom: 140px;
-        gap: 24px;
+        gap: 20px;
     }
 
     .benefits-item {
         max-width: unset;
-        flex-basis: calc((100% - 24px) / 2);
+        flex-basis: calc((100% - 40px) / 2);
     }
 
     .section-three {
@@ -342,6 +366,9 @@ margin-left: 40px;
 
     .section-four {
         padding: 80px 0;
+        max-width: 768px;
+        margin: 0 auto;
+        
     }
 
     .concentration-list {
@@ -357,7 +384,10 @@ margin-left: 40px;
         flex-basis: calc((100% - 32px) / 2);
     }
 
-    .section-five {}
+    .section-five {
+        max-width: 768px;
+        margin: 0 auto;
+    }
 
     .cbd-list {
         flex-wrap: wrap;
