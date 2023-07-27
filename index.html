@@ -51,7 +51,11 @@
               >вирішуйте проблеми зі здоров'ям ефективно</span
             >
           </h1>
-          <button class="button hero-button" type="button" data-modal-open>
+          <button
+            class="button hero-button"
+            type="button"
+            data-first-modal-open
+          >
             Замовити
           </button>
         </div>
@@ -168,7 +172,11 @@
               </p>
             </li>
           </ul>
-          <button class="button hero-button" type="button" data-modal-open>
+          <button
+            class="button hero-button"
+            type="button"
+            data-second-modal-open
+          >
             Замовити консультацію
           </button>
         </div>
@@ -273,7 +281,7 @@
                   <button
                     class="button cbd-table-btn"
                     type="button"
-                    data-modal-open
+                    data-third-modal-open
                   >
                     Замовити
                   </button>
@@ -283,6 +291,10 @@
                   CBD масло 2%
                   <span class="cbd-lines"> </span>
                 </h3>
+                <div class="disc-cont">
+                  <p class="discount-text">1000 грн </p>
+                  <p class="discount-text-with-disc">900 грн</p>
+                </div>
               </div>
             </li>
             <!-- 3% -->
@@ -325,7 +337,7 @@
                   <button
                     class="button cbd-table-btn"
                     type="button"
-                    data-modal-open
+                    data-fourth-modal-open
                   >
                     Замовити
                   </button>
@@ -335,6 +347,10 @@
                   CBD масло 3%
                   <span class="cbd-lines"> </span>
                 </h3>
+                <div class="disc-cont">
+                  <p class="discount-text">1500 грн </p>
+                  <p class="discount-text-with-disc">1350 грн</p>
+                </div>
               </div>
             </li>
             <!-- 5% -->
@@ -377,7 +393,7 @@
                   <button
                     class="button cbd-table-btn"
                     type="button"
-                    data-modal-open
+                    data-fifth-modal-open
                   >
                     Замовити
                   </button>
@@ -387,6 +403,10 @@
                   CBD масло 5%
                   <span class="cbd-lines"> </span>
                 </h3>
+                <div class="disc-cont">
+                  <p class="discount-text">2000 грн </p>
+                  <p class="discount-text-with-disc">1800 грн</p>
+                </div>
               </div>
             </li>
             <!-- 10% -->
@@ -429,7 +449,7 @@
                   <button
                     class="button cbd-table-btn"
                     type="button"
-                    data-modal-open
+                    data-sixth-modal-open
                   >
                     Замовити
                   </button>
@@ -439,6 +459,10 @@
                   CBD масло 10%
                   <span class="cbd-lines"> </span>
                 </h3>
+                <div class="disc-cont">
+                  <p class="discount-text">3400 грн </p>
+                  <p class="discount-text-with-disc">3060 грн</p>
+                </div>
               </div>
             </li>
             <!-- 15% -->
@@ -481,7 +505,7 @@
                   <button
                     class="button cbd-table-btn"
                     type="button"
-                    data-modal-open
+                    data-seventh-modal-open
                   >
                     Замовити
                   </button>
@@ -491,6 +515,10 @@
                   CBD масло 15%
                   <span class="cbd-lines"> </span>
                 </h3>
+                <div class="disc-cont">
+                  <p class="discount-text">4400 грн </p>
+                  <p class="discount-text-with-disc">3960 грн</p>
+                </div>
               </div>
             </li>
             <!-- pets -->
@@ -533,7 +561,7 @@
                   <button
                     class="button cbd-table-btn"
                     type="button"
-                    data-modal-open
+                    data-eighth-modal-open
                   >
                     Замовити
                   </button>
@@ -543,6 +571,10 @@
                   CBD масло 2% Pets
                   <span class="cbd-lines"> </span>
                 </h3>
+                <div class="disc-cont">
+                  <p class="discount-text">1000 грн </p>
+                  <p class="discount-text-with-disc">900 грн</p>
+                </div>
               </div>
             </li>
           </ul>
@@ -576,6 +608,13 @@
               продукти на території України.
             </li>
           </ul>
+        </div>
+      </section>
+
+      <!-- sticky discount -->
+      <section class="sticky-discount">
+        <div class="sticky-discount-cont">
+          <p class="sticky-discount-text">ЗНИЖКА НА CBD 10%!</p>
         </div>
       </section>
     </main>
@@ -634,16 +673,16 @@
         </address>
       </div>
     </footer>
-    <!-- modal -->
-    <div class="backdrop is-hidden" data-modal>
+    <!-- modal 1-->
+    <div class="backdrop is-hidden" data-first-modal>
       <div class="modal">
-        <button type="button" class="modal-btn" data-modal-close>
+        <button type="button" class="modal-btn" data-first-modal-close>
           <svg class="icon-button" width="8" height="8">
             <use href="images/icons.svg#icon-Vector"></use>
           </svg>
         </button>
         <p class="modal-prg">Залиште свої контакти і ми з Вами зв'яжемося!</p>
-        <form>
+        <form action="/send.php" method="post">
           <!-- input 1 -->
           <div class="modal-form-cont">
             <label class="modal-label" for="user-name"> Ім'я </label>
@@ -716,7 +755,696 @@
                 </svg>
               </span>
               Я погоджуюся з
-              <a href="" class="privacy-link">політикою конфіденційності</a>
+              <a
+                href="/politics.html"
+                crossorigin="anonymous"
+                referrerpolicy="no-referrer"
+                class="privacy-link"
+                >політикою конфіденційності</a
+              >
+            </label>
+          </div>
+
+          <button type="submit" class="send-btn">Send</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- modal 2 -->
+    <div class="backdrop is-hidden" data-second-modal>
+      <div class="modal">
+        <button type="button" class="modal-btn" data-second-modal-close>
+          <svg class="icon-button" width="8" height="8">
+            <use href="images/icons.svg#icon-Vector"></use>
+          </svg>
+        </button>
+        <p class="modal-prg">Залиште свої контакти і ми з Вами зв'яжемося!</p>
+        <form>
+          <!-- input 1 -->
+          <div class="modal-form-cont">
+            <label class="modal-label" for="user-name"> Ім'я </label>
+            <div class="modal-input-cont">
+              <input
+                id="user-name-one"
+                name="user-name-one"
+                type="text"
+                class="modal-input"
+              />
+              <svg width="18" height="24" class="modal-icon">
+                <use href="images/icons.svg#icon-user"></use>
+              </svg>
+            </div>
+          </div>
+          <!-- input 2 -->
+          <div class="modal-form-cont">
+            <label class="modal-label" for="user-phone"> Телефон </label>
+            <div class="modal-input-cont">
+              <input
+                name="user-phone-one"
+                type="text"
+                class="modal-input"
+                id="user-phone-one"
+              />
+              <svg width="18" height="24" class="modal-icon">
+                <use href="images/icons.svg#icon-tel"></use>
+              </svg>
+            </div>
+          </div>
+          <!-- input 3 -->
+          <div class="modal-form-cont">
+            <label class="modal-label" for="user-email"> Email </label>
+            <div class="modal-input-cont">
+              <input
+                name="user-email-one"
+                type="text"
+                class="modal-input"
+                id="user-email-one"
+              />
+              <svg width="18" height="24" class="modal-icon">
+                <use href="images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
+          </div>
+          <!-- comment -->
+          <div class="modal-form-container">
+            <label class="modal-label" for="user-comment"
+              >Залиште тут своє питання</label
+            >
+            <textarea
+              name="user-comment-one"
+              id="user-comment-one"
+              class="textarea-comment"
+              placeholder="Текст"
+            ></textarea>
+          </div>
+          <div class="checkbox-cont">
+            <input
+              type="checkbox"
+              name="user-privacy-one"
+              id="user-privacy-one"
+              class="privacy-input visually-hidden"
+              value="true"
+            />
+            <label for="user-privacy" class="privacy-label">
+              <span class="privacy-span">
+                <svg class="privacy-icon" width="10" height="8">
+                  <use href="images/icons.svg#icon-check"></use>
+                </svg>
+              </span>
+              Я погоджуюся з
+              <a
+                href="/politics.html"
+                crossorigin="anonymous"
+                referrerpolicy="no-referrer"
+                class="privacy-link"
+                >політикою конфіденційності</a
+              >
+            </label>
+          </div>
+
+          <button type="submit" class="send-btn">Send</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- modal 3 -->
+
+    <div class="backdrop is-hidden" data-third-modal>
+      <div class="modal">
+        <button type="button" class="modal-btn" data-third-modal-close>
+          <svg class="icon-button" width="8" height="8">
+            <use href="images/icons.svg#icon-Vector"></use>
+          </svg>
+        </button>
+        <p class="modal-prg">Залиште свої контакти і ми з Вами зв'яжемося!</p>
+        <form id="tg">
+          <!-- input 1 -->
+          <div class="modal-form-cont">
+            <label class="modal-label" for="user-name"> Ім'я </label>
+            <div class="modal-input-cont">
+              <input
+                id="user-name-two"
+                name="user-name-two"
+                type="text"
+                class="modal-input"
+              />
+              <svg width="18" height="24" class="modal-icon">
+                <use href="images/icons.svg#icon-user"></use>
+              </svg>
+            </div>
+          </div>
+          <!-- input 2 -->
+          <div class="modal-form-cont">
+            <label class="modal-label" for="user-phone"> Телефон </label>
+            <div class="modal-input-cont">
+              <input
+                name="user-phone-two"
+                type="text"
+                class="modal-input"
+                id="user-phone-two"
+              />
+              <svg width="18" height="24" class="modal-icon">
+                <use href="images/icons.svg#icon-tel"></use>
+              </svg>
+            </div>
+          </div>
+          <!-- input 3 -->
+          <div class="modal-form-cont">
+            <label class="modal-label" for="user-email"> Email </label>
+            <div class="modal-input-cont">
+              <input
+                name="user-email-two"
+                type="text"
+                class="modal-input"
+                id="user-email-two"
+              />
+              <svg width="18" height="24" class="modal-icon">
+                <use href="images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
+          </div>
+          <!-- comment -->
+          <div class="modal-form-container">
+            <label class="modal-label" for="user-comment"
+              >Залиште тут своє питання</label
+            >
+            <textarea
+              name="user-comment-two"
+              id="user-comment-two"
+              class="textarea-comment"
+              placeholder="Текст"
+            ></textarea>
+          </div>
+          <div class="checkbox-cont">
+            <input
+              type="checkbox"
+              name="user-privacy-two"
+              id="user-privacy-two"
+              class="privacy-input visually-hidden"
+              value="true"
+            />
+            <label for="user-privacy" class="privacy-label">
+              <span class="privacy-span">
+                <svg class="privacy-icon" width="10" height="8">
+                  <use href="images/icons.svg#icon-check"></use>
+                </svg>
+              </span>
+              Я погоджуюся з
+              <a
+                href="/politics.html"
+                crossorigin="anonymous"
+                referrerpolicy="no-referrer"
+                class="privacy-link"
+                >політикою конфіденційності</a
+              >
+            </label>
+          </div>
+
+          <button type="submit" class="send-btn">Send</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- modal 4 -->
+
+    <div class="backdrop is-hidden" data-fourth-modal>
+      <div class="modal">
+        <button type="button" class="modal-btn" data-fourth-modal-close>
+          <svg class="icon-button" width="8" height="8">
+            <use href="images/icons.svg#icon-Vector"></use>
+          </svg>
+        </button>
+        <p class="modal-prg">Залиште свої контакти і ми з Вами зв'яжемося!</p>
+        <form>
+          <!-- input 1 -->
+          <div class="modal-form-cont">
+            <label class="modal-label" for="user-name"> Ім'я </label>
+            <div class="modal-input-cont">
+              <input
+                id="user-name-three"
+                name="user-name-three"
+                type="text"
+                class="modal-input"
+              />
+              <svg width="18" height="24" class="modal-icon">
+                <use href="images/icons.svg#icon-user"></use>
+              </svg>
+            </div>
+          </div>
+          <!-- input 2 -->
+          <div class="modal-form-cont">
+            <label class="modal-label" for="user-phone"> Телефон </label>
+            <div class="modal-input-cont">
+              <input
+                name="user-phone-three"
+                type="text"
+                class="modal-input"
+                id="user-phone-three"
+              />
+              <svg width="18" height="24" class="modal-icon">
+                <use href="images/icons.svg#icon-tel"></use>
+              </svg>
+            </div>
+          </div>
+          <!-- input 3 -->
+          <div class="modal-form-cont">
+            <label class="modal-label" for="user-email"> Email </label>
+            <div class="modal-input-cont">
+              <input
+                name="user-email-three"
+                type="text"
+                class="modal-input"
+                id="user-email-three"
+              />
+              <svg width="18" height="24" class="modal-icon">
+                <use href="images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
+          </div>
+          <!-- comment -->
+          <div class="modal-form-container">
+            <label class="modal-label" for="user-comment"
+              >Залиште тут своє питання</label
+            >
+            <textarea
+              name="user-comment-three"
+              id="user-comment-three"
+              class="textarea-comment"
+              placeholder="Текст"
+            ></textarea>
+          </div>
+          <div class="checkbox-cont">
+            <input
+              type="checkbox"
+              name="user-privacy-three"
+              id="user-privacy-three"
+              class="privacy-input visually-hidden"
+              value="true"
+            />
+            <label for="user-privacy" class="privacy-label">
+              <span class="privacy-span">
+                <svg class="privacy-icon" width="10" height="8">
+                  <use href="images/icons.svg#icon-check"></use>
+                </svg>
+              </span>
+              Я погоджуюся з
+              <a
+                href="/politics.html"
+                crossorigin="anonymous"
+                referrerpolicy="no-referrer"
+                class="privacy-link"
+                >політикою конфіденційності</a
+              >
+            </label>
+          </div>
+
+          <button type="submit" class="send-btn">Send</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- modal 5 -->
+
+    <div class="backdrop is-hidden" data-fifth-modal>
+      <div class="modal">
+        <button type="button" class="modal-btn" data-fifth-modal-close>
+          <svg class="icon-button" width="8" height="8">
+            <use href="images/icons.svg#icon-Vector"></use>
+          </svg>
+        </button>
+        <p class="modal-prg">Залиште свої контакти і ми з Вами зв'яжемося!</p>
+        <form>
+          <!-- input 1 -->
+          <div class="modal-form-cont">
+            <label class="modal-label" for="user-name"> Ім'я </label>
+            <div class="modal-input-cont">
+              <input
+                id="user-name-four"
+                name="user-name-four"
+                type="text"
+                class="modal-input"
+              />
+              <svg width="18" height="24" class="modal-icon">
+                <use href="images/icons.svg#icon-user"></use>
+              </svg>
+            </div>
+          </div>
+          <!-- input 2 -->
+          <div class="modal-form-cont">
+            <label class="modal-label" for="user-phone"> Телефон </label>
+            <div class="modal-input-cont">
+              <input
+                name="user-phone-four"
+                type="text"
+                class="modal-input"
+                id="user-phone-four"
+              />
+              <svg width="18" height="24" class="modal-icon">
+                <use href="images/icons.svg#icon-tel"></use>
+              </svg>
+            </div>
+          </div>
+          <!-- input 3 -->
+          <div class="modal-form-cont">
+            <label class="modal-label" for="user-email"> Email </label>
+            <div class="modal-input-cont">
+              <input
+                name="user-email-four"
+                type="text"
+                class="modal-input"
+                id="user-email-four"
+              />
+              <svg width="18" height="24" class="modal-icon">
+                <use href="images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
+          </div>
+          <!-- comment -->
+          <div class="modal-form-container">
+            <label class="modal-label" for="user-comment"
+              >Залиште тут своє питання</label
+            >
+            <textarea
+              name="user-comment-four"
+              id="user-comment-four"
+              class="textarea-comment"
+              placeholder="Текст"
+            ></textarea>
+          </div>
+          <div class="checkbox-cont">
+            <input
+              type="checkbox"
+              name="user-privacy-four"
+              id="user-privacy-four"
+              class="privacy-input visually-hidden"
+              value="true"
+            />
+            <label for="user-privacy" class="privacy-label">
+              <span class="privacy-span">
+                <svg class="privacy-icon" width="10" height="8">
+                  <use href="images/icons.svg#icon-check"></use>
+                </svg>
+              </span>
+              Я погоджуюся з
+              <a
+                href="/politics.html"
+                crossorigin="anonymous"
+                referrerpolicy="no-referrer"
+                class="privacy-link"
+                >політикою конфіденційності</a
+              >
+            </label>
+          </div>
+
+          <button type="submit" class="send-btn">Send</button>
+        </form>
+      </div>
+    </div>
+    <!-- modal 6 -->
+    <div class="backdrop is-hidden" data-sixth-modal>
+      <div class="modal">
+        <button type="button" class="modal-btn" data-sixth-modal-close>
+          <svg class="icon-button" width="8" height="8">
+            <use href="images/icons.svg#icon-Vector"></use>
+          </svg>
+        </button>
+        <p class="modal-prg">Залиште свої контакти і ми з Вами зв'яжемося!</p>
+        <form>
+          <!-- input 1 -->
+          <div class="modal-form-cont">
+            <label class="modal-label" for="user-name"> Ім'я </label>
+            <div class="modal-input-cont">
+              <input
+                id="user-name-five"
+                name="user-name-five"
+                type="text"
+                class="modal-input"
+              />
+              <svg width="18" height="24" class="modal-icon">
+                <use href="images/icons.svg#icon-user"></use>
+              </svg>
+            </div>
+          </div>
+          <!-- input 2 -->
+          <div class="modal-form-cont">
+            <label class="modal-label" for="user-phone"> Телефон </label>
+            <div class="modal-input-cont">
+              <input
+                name="user-phone-five"
+                type="text"
+                class="modal-input"
+                id="user-phone-five"
+              />
+              <svg width="18" height="24" class="modal-icon">
+                <use href="images/icons.svg#icon-tel"></use>
+              </svg>
+            </div>
+          </div>
+          <!-- input 3 -->
+          <div class="modal-form-cont">
+            <label class="modal-label" for="user-email"> Email </label>
+            <div class="modal-input-cont">
+              <input
+                name="user-email-five"
+                type="text"
+                class="modal-input"
+                id="user-email-five"
+              />
+              <svg width="18" height="24" class="modal-icon">
+                <use href="images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
+          </div>
+          <!-- comment -->
+          <div class="modal-form-container">
+            <label class="modal-label" for="user-comment"
+              >Залиште тут своє питання</label
+            >
+            <textarea
+              name="user-comment-five"
+              id="user-comment-five"
+              class="textarea-comment"
+              placeholder="Текст"
+            ></textarea>
+          </div>
+          <div class="checkbox-cont">
+            <input
+              type="checkbox"
+              name="user-privacy-five"
+              id="user-privacy-five"
+              class="privacy-input visually-hidden"
+              value="true"
+            />
+            <label for="user-privacy" class="privacy-label">
+              <span class="privacy-span">
+                <svg class="privacy-icon" width="10" height="8">
+                  <use href="images/icons.svg#icon-check"></use>
+                </svg>
+              </span>
+              Я погоджуюся з
+              <a
+                href="/politics.html"
+                crossorigin="anonymous"
+                referrerpolicy="no-referrer"
+                class="privacy-link"
+                >політикою конфіденційності</a
+              >
+            </label>
+          </div>
+
+          <button type="submit" class="send-btn">Send</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- modal 7 -->
+
+    <div class="backdrop is-hidden" data-seventh-modal>
+      <div class="modal">
+        <button type="button" class="modal-btn" data-seventh-modal-close>
+          <svg class="icon-button" width="8" height="8">
+            <use href="images/icons.svg#icon-Vector"></use>
+          </svg>
+        </button>
+        <p class="modal-prg">Залиште свої контакти і ми з Вами зв'яжемося!</p>
+        <form>
+          <!-- input 1 -->
+          <div class="modal-form-cont">
+            <label class="modal-label" for="user-name"> Ім'я </label>
+            <div class="modal-input-cont">
+              <input
+                id="user-name-six"
+                name="user-name-six"
+                type="text"
+                class="modal-input"
+              />
+              <svg width="18" height="24" class="modal-icon">
+                <use href="images/icons.svg#icon-user"></use>
+              </svg>
+            </div>
+          </div>
+          <!-- input 2 -->
+          <div class="modal-form-cont">
+            <label class="modal-label" for="user-phone"> Телефон </label>
+            <div class="modal-input-cont">
+              <input
+                name="user-phone-six"
+                type="text"
+                class="modal-input"
+                id="user-phone-six"
+              />
+              <svg width="18" height="24" class="modal-icon">
+                <use href="images/icons.svg#icon-tel"></use>
+              </svg>
+            </div>
+          </div>
+          <!-- input 3 -->
+          <div class="modal-form-cont">
+            <label class="modal-label" for="user-email"> Email </label>
+            <div class="modal-input-cont">
+              <input
+                name="user-email-six"
+                type="text"
+                class="modal-input"
+                id="user-email-six"
+              />
+              <svg width="18" height="24" class="modal-icon">
+                <use href="images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
+          </div>
+          <!-- comment -->
+          <div class="modal-form-container">
+            <label class="modal-label" for="user-comment"
+              >Залиште тут своє питання</label
+            >
+            <textarea
+              name="user-comment-six"
+              id="user-comment-six"
+              class="textarea-comment"
+              placeholder="Текст"
+            ></textarea>
+          </div>
+          <div class="checkbox-cont">
+            <input
+              type="checkbox"
+              name="user-privacy-six"
+              id="user-privacy-six"
+              class="privacy-input visually-hidden"
+              value="true"
+            />
+            <label for="user-privacy" class="privacy-label">
+              <span class="privacy-span">
+                <svg class="privacy-icon" width="10" height="8">
+                  <use href="images/icons.svg#icon-check"></use>
+                </svg>
+              </span>
+              Я погоджуюся з
+              <a
+                href="/politics.html"
+                crossorigin="anonymous"
+                referrerpolicy="no-referrer"
+                class="privacy-link"
+                >політикою конфіденційності</a
+              >
+            </label>
+          </div>
+
+          <button type="submit" class="send-btn">Send</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- modal 8 -->
+
+    <div class="backdrop is-hidden" data-eighth-modal>
+      <div class="modal">
+        <button type="button" class="modal-btn" data-eighth-modal-close>
+          <svg class="icon-button" width="8" height="8">
+            <use href="images/icons.svg#icon-Vector"></use>
+          </svg>
+        </button>
+        <p class="modal-prg">Залиште свої контакти і ми з Вами зв'яжемося!</p>
+        <form>
+          <!-- input 1 -->
+          <div class="modal-form-cont">
+            <label class="modal-label" for="user-name"> Ім'я </label>
+            <div class="modal-input-cont">
+              <input
+                id="user-name-seven"
+                name="user-name-seven"
+                type="text"
+                class="modal-input"
+              />
+              <svg width="18" height="24" class="modal-icon">
+                <use href="images/icons.svg#icon-user"></use>
+              </svg>
+            </div>
+          </div>
+          <!-- input 2 -->
+          <div class="modal-form-cont">
+            <label class="modal-label" for="user-phone"> Телефон </label>
+            <div class="modal-input-cont">
+              <input
+                name="user-phone-seven"
+                type="text"
+                class="modal-input"
+                id="user-phone-seven"
+              />
+              <svg width="18" height="24" class="modal-icon">
+                <use href="images/icons.svg#icon-tel"></use>
+              </svg>
+            </div>
+          </div>
+          <!-- input 3 -->
+          <div class="modal-form-cont">
+            <label class="modal-label" for="user-email"> Email </label>
+            <div class="modal-input-cont">
+              <input
+                name="user-email-seven"
+                type="text"
+                class="modal-input"
+                id="user-email-seven"
+              />
+              <svg width="18" height="24" class="modal-icon">
+                <use href="images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
+          </div>
+          <!-- comment -->
+          <div class="modal-form-container">
+            <label class="modal-label" for="user-comment"
+              >Залиште тут своє питання</label
+            >
+            <textarea
+              name="user-comment-seven"
+              id="user-comment-seven"
+              class="textarea-comment"
+              placeholder="Текст"
+            ></textarea>
+          </div>
+          <div class="checkbox-cont">
+            <input
+              type="checkbox"
+              name="user-privacy-seven"
+              id="user-privacy-seven"
+              class="privacy-input visually-hidden"
+              value="true"
+            />
+            <label for="user-privacy" class="privacy-label">
+              <span class="privacy-span">
+                <svg class="privacy-icon" width="10" height="8">
+                  <use href="images/icons.svg#icon-check"></use>
+                </svg>
+              </span>
+              Я погоджуюся з
+              <a
+                href="/politics.html"
+                crossorigin="anonymous"
+                referrerpolicy="no-referrer"
+                class="privacy-link"
+                >політикою конфіденційності</a
+              >
             </label>
           </div>
 
@@ -725,5 +1453,48 @@
       </div>
     </div>
     <script src="js/modal.js"></script>
+
+
+
+
+
+
+
+
+
+    
+    <!-- <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+
+    <script>
+      const TOKEN = "6686326526:AAH4qHtcRel6N6nSzMCndPlJgTSiPQ_4Bvk";
+      const CHAT_ID = "-1001904526880";
+      const URI_API = `https:/api.telegram.org/bot${ TOKEN }/sendMessage`;
+
+      document.getElementById('tg').addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        let message = `<b>Нова заявка!</b>\n`;
+        message += `<b>ім'я відправника</b>${this.user-name}\n`;
+        message += `<b>телефон</b>${ this.tel }`; 
+        message += `<b>пошта</b>${this.user-email}\n`; 
+        message += `<b>коментар</b>${this.user-comment}`; 
+
+        axios.post(URI_API, {
+          chat_id: CHAT_ID,
+          parse_mode: 'html',
+          text: message
+        })
+        .then((res) => {
+      this.tel.value = ""
+        })
+
+        .catch((err) => {
+      console.warn(err);
+        })
+        .finally(() => {
+          console.log('end');
+        })
+      })
+    </script> -->
   </body>
 </html>

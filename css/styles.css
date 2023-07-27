@@ -399,7 +399,7 @@ padding: 100px 0;
 }
 
 .hero-section {
-    background-image: url(images/4.jpg);
+    background-image: url(/images/4.jpg);
     max-width: 1440px;
     background-repeat: no-repeat;
     background-position: center;
@@ -478,7 +478,7 @@ padding: 100px 0;
 
 .cbd-list-wrap {
     width: 300px;
-    height: 360px;
+    height: 396px;
     background-color: var(--white);
     border-radius: 8px;
     box-shadow: 6px 7px 7px -4px rgba(0, 0, 0, 0.3);
@@ -519,7 +519,7 @@ color: var(--white);
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 24px;
+    margin-bottom: 46px;
 }
 
 .cbd-table-btn {
@@ -568,8 +568,27 @@ color: var(--white);
     flex-basis: calc((100% - 48px) / 3);
     
 }
+.disc-cont {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+.discount-text {
+    margin: 0;
+    /* text-align: center; */
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--spring-green);
+    text-decoration: line-through;
+}
 
-
+.discount-text-with-disc {
+    margin: 0;
+    /* text-align: center; */
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--spring-green);
+}
 /* section five */
 
 .section-five {
@@ -867,3 +886,40 @@ color: var(--spring-green);
     border-radius: 4px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.politics-main-header {
+    margin: 0 auto;
+    margin-top: 32px;
+    text-align: center;
+}
+
+.last-prg {
+    margin-bottom: 32px;
+}
+
+/* sticky disc */
+
+.sticky-discount-cont {
+    position: fixed;
+  right: 40px;
+  bottom: 40px;
+  display: inline-block;
+  width: 160px;
+  height: 160px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+    background-color: var(--chinese-yellow);
+    box-shadow: 5px 5px 14px -1px rgba(0,0,0,0.2);
+}
+
+.sticky-discount-text {
+    margin: 0 auto;
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+    color: var(--white);
+    margin-top: 38px;
+}
+
