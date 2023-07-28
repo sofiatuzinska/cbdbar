@@ -165,26 +165,26 @@
 
     .sticky-discount-cont {
         position: fixed;
-      right: 30px;
-      bottom: 30px;
-      display: inline-block;
-      width: 120px;
-      height: 120px;
-      margin: 0;
-      padding: 0;
-      border: none;
-      border-radius: 50%;
-        background-color: var(--chinese-yellow);
-        box-shadow: 5px 5px 14px -1px rgba(0,0,0,0.2);
+        right: 40px;
+        bottom: 40px;
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+        margin: 0;
+        padding: 0;
+        border: none;
+        border-radius: 50%;
+          background-color: var(--chinese-yellow);
+          box-shadow: 5px 5px 14px -1px rgba(0,0,0,0.2);
     }
     
     .sticky-discount-text {
-        margin: 0 auto;
-        font-size: 18px;
+        margin-top: 32px;
+        font-size: 14px;
         font-weight: 600;
         text-align: center;
         color: var(--white);
-        margin-top: 45px;
+
     }
     .section-five {
         max-width: 428px;
