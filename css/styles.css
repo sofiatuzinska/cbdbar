@@ -146,34 +146,19 @@ padding-top: 24px;
     margin: 0 auto;
 }
 
-.hero-button {
-    margin: 0 auto;
-    font-family: "Roboto", sans-serif;
-    background-color: var(--spring-green);
-    
-        
-        color: var(--white);
-        font-family: 'Roboto';
-            font-style: normal;
-            font-weight: 500;
-            font-size: 16px;
-            line-height: 1.5;
-            letter-spacing: 0.04em;
-           
-}
-button:hover {
+.button:hover {
     background: var(--chinese-yellow);
         
         
         color: var(--white);
 }
-button:focus {
+.button:focus a {
     background: var(--chinese-yellow);
     
     
-    color: var(--white);
+    color: v.ar(--white);
 }
-button {
+.button {
     
     font-family: "Roboto", sans-serif;
 cursor: pointer;
@@ -295,7 +280,8 @@ header {
 /* footer */
 
 .footer {
-padding: 100px 0;
+margin: 0 auto;
+padding: 60px 0;
 }
 
 .footer-logo {
@@ -389,17 +375,49 @@ padding: 100px 0;
     margin-bottom: 72px;
 }
 .hero-button {
+    display: block;
+    margin: 0 auto;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.3;
+    letter-spacing: 0.04em;
+    background-color: var(--spring-green);
+    color: var(--white);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-        border-radius: 4px;
-        border: none;
-        display: block;
-        min-width: 169px;
-        height: 56px;
-        cursor: pointer;
-        padding: 16px 32px;
-        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 4px;
+    border: none;
+    width: 150px;
+    height: 56px;
+    cursor: pointer;
+    padding: 20px 32px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);        
 }
-
+.order-button {
+    display: block;
+    margin: 0 auto;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.3;
+    letter-spacing: 0.04em;
+    background-color: var(--almost-white);
+    color: var(--eerie-black);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    text-decoration: none;
+    text-align: center;
+    border-radius: 4px;
+    border: none;
+    width: 150px;
+    height: 56px;
+    cursor: pointer;
+    padding: 20px 32px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+}
 .hero-section {
     background-image: url(/images/4.jpg);
     max-width: 1440px;
@@ -410,6 +428,7 @@ padding: 100px 0;
 /* section-two */
 
 .section-two {
+    margin: 0 auto;
     padding-top: 120px;
     padding-bottom: 42px;
     padding-left: 0;
@@ -448,6 +467,7 @@ padding: 100px 0;
 /* section three */
 
 .section-three {
+    margin: 0 auto;
     padding: 60px 0;
 }
 
@@ -475,6 +495,7 @@ padding: 100px 0;
 /* section four */
 
 .section-four {
+    margin: 0 auto;
     padding: 100px 0;
 }
 
@@ -594,6 +615,7 @@ color: var(--white);
 /* section five */
 
 .section-five {
+    margin: 0 auto;
 padding: 120px 0;
 }
 
@@ -675,68 +697,29 @@ padding: 120px 0;
 /* modal */
 
 
-
-.backdrop {
-    position: fixed;
-    z-index: 2;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(46, 47, 66, 0.4);
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.order-section {
+    margin: 0 auto;
+    background-color: var(--almost-white);
+    padding: 60px 0;
 }
 
 .modal {
-    padding: 72px 24px 24px 24px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 408px;
-    min-height: 584px;
-    background: #fcfcfc;
+    margin: 0 auto;
+    width: 768px;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
-        border-radius: 4px;
-
-        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 8px;
+    margin-bottom: 26px;       
+    padding: 22px 22px; 
 }
 .modal-prg {
-    font-weight: 500;
-    font-size: 16px;
+    margin: 0 auto;
+    font-weight: 600;
+    font-size: 18px;
     line-height: 1.5;
     text-align: center;
     letter-spacing: 0.02em;
-    color: var(--grey);
-    margin-bottom: 16px;
+    margin-bottom: 46px;
 
-}
-.modal-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0;
-
-    position: absolute;
-right: 24px;
-top: 24px;
-    width: 24px;
-    height: 24px;
-    background-color: var(--almost-white);
-    border: 1px solid var(--eerie-black);
-    border-radius: 50%;
-
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal-btn:hover,
-.modal-btn:focus {
-    border: none;
-    background-color: var(--chinese-yellow);
-}
-
-.modal-btn:hover .icon-button,
-.modal-btn:focus .icon-button {
-    fill: var(--white);
 }
 
 .is-hidden {
@@ -745,34 +728,36 @@ top: 24px;
     pointer-events: none;
 }
 
-.modal-svg {
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal-btn:hover,
-.modal-btn:focus {
-fill: #ffffff
-}
-
 .modal-form-cont {
-    margin-bottom: 8px;
+    margin: 0 auto;
+    margin-bottom: 24px;
 }
 
 .modal-label {
-    font-size: 12px;
+    display: block;
+    margin-left: 185px;
+    font-size: 16px;
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: #434455;
-    display: block;
     margin-bottom: 4px;
 }
 
-.modal-input-cont {
-    position: relative;
+.modal-label-text {
+    display: block;
+    font-size: 16px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: #434455;
+    margin-bottom: 4px;
 }
 
+
 .modal-input {
-    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    width: 50%;
     height: 40px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
@@ -784,7 +769,7 @@ fill: #ffffff
 
 .modal-input:focus,
 .modal-input:hover {
-    border-color: var(--artichoke);
+    border-color: var(--spring-green)
 }
 
 .modal-icon {
@@ -795,7 +780,7 @@ fill: #ffffff
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .textarea-comment:focus {
-border-color: var(--artichoke);
+border-color: var(--spring-green);
 }
 
 .modal-comment-cont {

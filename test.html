@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="tg1">
+        <!-- input 1 -->
+        <div class="modal-form-cont">
+          <label class="modal-label"> Ім'я </label>
+          <div class="modal-input-cont">
+            <input
+              name="username"
+              type="text"
+              class="modal-input"
+            />
+            <svg width="18" height="24" class="modal-icon">
+              <use href="images/icons.svg#icon-user"></use>
+            </svg>
+          </div>
+        </div>
+        <!-- input 2 -->
+        <div class="modal-form-cont">
+          <label class="modal-label" for="userphone"> Телефон </label>
+          <div class="modal-input-cont">
+            <input
+              name="userphone"
+              type="text"
+              class="modal-input"
+              id="userphone"
+            />
+            <svg width="18" height="24" class="modal-icon">
+              <use href="images/icons.svg#icon-tel"></use>
+            </svg>
+          </div>
+        </div>
+        <!-- input 3 -->
+        <div class="modal-form-cont">
+          <label class="modal-label" for="useremail"> Email </label>
+          <div class="modal-input-cont">
+            <input
+              name="useremail"
+              type="text"
+              class="modal-input"
+              id="useremail"
+            />
+            <svg width="18" height="24" class="modal-icon">
+              <use href="images/icons.svg#icon-email"></use>
+            </svg>
+          </div>
+        </div>
+        <!-- comment -->
+        <div class="modal-form-container">
+          <label class="modal-label" for="usercomment"
+            >Залиште тут своє питання</label
+          >
+          <textarea
+            name="usercomment"
+            id="usercomment"
+            class="textarea-comment"
+            placeholder="Текст"
+          ></textarea>
+        </div>
+          </label>
+        </div>
+
+        <button type="submit" class="send-btn">Send</button>
+      </form>
+
+
+
+
+
+      <!-- script -->
+
+      <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+
+      <script>
+        const TOKEN = "6686326526:AAH4qHtcRel6N6nSzMCndPlJgTSiPQ_4Bvk";
+        const CHAT_ID = "-1001904526880";
+        const URI_API = `https:/api.telegram.org/bot${ TOKEN }/sendMessage`;
+  
+        document.getElementById('tg').addEventListener('submit', function(e) {
+          e.preventDefault();
+  
+          let message = `<b>Нова заявка!</b>\n`;
+
+          message += `<b>ім'я відправника</b> ${this.username.value} \n`;
+          message += `<b>телефон</b> ${ this.userphone.value } \n`; 
+          message += `<b>телефон</b> ${ this.useremail.value } \n`; 
+          message += `<b>телефон</b> ${ this.usercomment.value }`; 
+
+
+          axios.post(URI_API, {
+            chat_id: CHAT_ID,
+            parse_mode: 'html',
+            text: message
+          })
+          .then((res) => {
+        this.tel.value = ""
+          })
+  
+          .catch((err) => {
+        console.warn(err);
+          })
+          .finally(() => {
+            console.log('end');
+          })
+        })
+      </script>
+</body>
+</html>
