@@ -117,8 +117,9 @@
 
     .section-two {
         max-width: 428px;
-        padding: 62px 0;
+        padding: 42px 0;
         margin: 0 auto;
+        background-color: var(--almost-white);
     }
 
     .header-two {
@@ -132,13 +133,32 @@
         text-align: center;
         margin: 0 auto;
         width: 100%;
-        gap: 4px;
-        margin-bottom: 38px;
+        margin-bottom: 28px;
     }
 
+    .graphics {
+        display: inline;
+        margin: 0 auto;
+        margin: 4px 0;
+    }
 
+.benefits-list-item {
+    margin: 0 auto;
+    margin-bottom: 8px;
+    padding: 4px;
+    text-align: center;
+}
     .socials-wrapper {
         display: none;
+    }
+
+    .mobile-line {
+        margin: 0 auto;
+        width: 340px;
+        height: 1px;
+margin-top: 6px;
+margin-bottom: 6px;
+        background-color: var(--eerie-black);
     }
 
     .droplet-icon-mobile {
@@ -153,7 +173,7 @@
 
     .section-three {
         max-width: 428px;
-        padding: 42px 0;
+        padding: 22px 0;
         margin: 0 auto;
     }
 
@@ -163,7 +183,7 @@
 
     .section-four {
         max-width: 428px;
-        padding: 42px 0;
+        padding: 22px 0;
         margin: 0 auto;
     }
 
@@ -188,17 +208,33 @@
     }
     
     .sticky-discount-text {
-        margin-top: 28px;
-        font-size: 14px;
-        font-weight: 600;
-        text-align: center;
-        color: var(--white);
+        display: flex;
+   align-items: center;
+   text-decoration: none;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    color: var(--white);
+
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    width: 160px;
+    height: 160px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+      background-color: var(--chinese-yellow);
+      box-shadow: 5px 5px 14px -1px rgba(0,0,0,0.2);
+
+      cursor: pointer;
 
     }
     .section-five {
         max-width: 428px;
         margin: 0 auto;
-        padding: 96px 0;
+        padding: 46px 0;
     }
 
     .cbd-list {
@@ -237,7 +273,7 @@
 
     .order-section {
         margin: 0 auto;
-        padding: 40px 0;
+        padding: 30px 0;
         width: 100%;
     }
 
@@ -363,23 +399,30 @@ margin-left: 40px;
     }
 
     .section-two {
-        padding: 120px 0;
+        padding: 20px 0;
         margin: 0 auto;
         max-width: 768px;
     }
-
+.section-additional {
+    padding: 20px 0;
+        margin: 0 auto;
+        max-width: 768px;
+}
     .benefits-list {
-        margin-bottom: 140px;
-        gap: 20px;
+        margin-bottom: 60px;
+        gap: 10px;
+        
     }
 
     .benefits-item {
         max-width: unset;
         flex-basis: calc((100% - 40px) / 2);
+
+       
     }
 
     .section-three {
-        padding: 40px 0;
+        padding: 20px 0;
     }
 
     .cbd-image {
@@ -387,7 +430,7 @@ margin-left: 40px;
     }
 
     .section-four {
-        padding: 80px 0;
+        padding: 50px 0;
         max-width: 768px;
         margin: 0 auto;
         
@@ -399,7 +442,7 @@ margin-left: 40px;
     }
 
     .header-two {
-        margin-bottom: 96px;
+        margin-bottom: 66px;
     }
 
     .concentration-list-item {
